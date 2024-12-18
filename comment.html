@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Comment</title>
+  <link rel="stylesheet" href="comment.css">
+</head>
+<body>
+  <nav>
+    <a href="#" class="logo"><span>Mayunie</span></a>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li> 
+      <li><a href="video.html">Video</a></li>
+      <li><a href="comment.html">Comment</a></li>
+    </ul>
+  </nav>
+
+  <div class="comment-box">
+    <h2>Comment</h2>
+    <form id="commentForm">
+      <input type="text" name="full_name" placeholder="Full Name..." required>
+      <input type="email" name="email" placeholder="Email Address..." required>
+      <textarea name="comment" placeholder="Type Your Comment..." required></textarea>
+      <button type="submit">Submit Comment</button>
+    </form>
+    
+    
+    <div id="successMessage" class="success-message">
+      <p>Thank you for your comment! It has been submitted successfully.</p>
+    </div>
+  </div>
+
+     
+  <div class="timetable">
+    <h2>My Timetable</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>08:00 - 10:00</td>
+          <td>Cyber Security</td>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>14:00 - 16:00</td>
+          <td>E-Commerce</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>11:00 - 13:00</td>
+          <td>Tutorial AR</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>14:00 - 16:00</td>
+          <td>AR Class</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>08:00 - 10:00</td>
+          <td>Computer Graphics</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>14:00 - 16:00</td>
+          <td>Web Programming</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="comment.js"></script>
+</body>
+</html>

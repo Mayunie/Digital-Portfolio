@@ -1,0 +1,98 @@
+/* General reset for box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  padding: 0; 
+  gap: 2em; 
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1em 0;
+  color: white;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 20px;
+  color: white;
+}
+
+nav .links {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  list-style-type: none;
+}
+
+nav .links li {
+  font-size: 1.2em;
+}
+
+nav .links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+}
+
+nav .links a:hover {
+  opacity: 1;
+}
+
+.video-container {
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; 
+  text-align: center;
+  margin-top: 100px; 
+}
+
+video {
+  width: 100%; 
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 1em;
+  color: #333;
+}
+
+
+@media(max-width: 768px) {
+  body {
+    gap: 1em; 
+  }
+
+  nav .links {
+    flex-direction: column;
+  }
+
+  .video-container {
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}

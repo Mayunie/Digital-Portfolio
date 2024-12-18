@@ -1,0 +1,157 @@
+/* General reset for box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: #f4f4f4;
+  height: 100vh; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0; 
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1em 5%;
+  background-color: #333;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  color: white;
+  font-size: 2em;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav .logo span {
+  color: #4caf50;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-top: 0.5em;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul a {
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+nav ul a:hover {
+  opacity: 1;
+  color: #4caf50;
+}
+
+
+.success-message {
+  display: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 1em;
+  border-radius: 8px;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.success-message p {
+  margin: 0;
+}
+
+.comment-box {
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 80px; 
+  text-align: center; 
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa;
+}
+
+
+@media(max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul a {
+    font-size: 1.1em;
+  }
+
+
+.comment-box {
+    padding: 1.5em;
+   
+  }
+}
+
+.timetable {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+.timetable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.timetable th, .timetable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.timetable th {
+  background-color: #333;
+  color: white;
+}
+.timetable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
